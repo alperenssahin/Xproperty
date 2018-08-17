@@ -24,7 +24,7 @@ int main() {
     }
     My_list.head = head;
     My_list.count = 0;
-    read_dataset_file("../dataset/house_price_data.csv",
+    read_dataset_file("./house_price_data.csv",
                       &My_list); //data seti okuma komutu, yeni locationları listeye kaydeder;
 
 
@@ -44,7 +44,7 @@ int main() {
 
     memset(Test_List.B_list, 0, sizeof(My_list.B_list));
 
-    read_dataset_file("../dataset/house_price_test.csv", &Test_List);
+    read_dataset_file("./house_price_test.csv", &Test_List);
     srand(time(NULL));
     //FONKSYON TESTLERİ//
 
